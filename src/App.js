@@ -28,7 +28,7 @@ function App() {
     );
     setPokemonData(_pokemonData);
   }
-  console.log(pokemonData);
+  // console.log(pokemonData);
   return (
     <div className="App">
       {loading ? (
@@ -37,6 +37,7 @@ function App() {
         <>
           <div className="pokemonCardContainer">
             {pokemonData.map((pokemon, i) => {
+              console.log(pokemon.abilities);
               return <Card key={i} pokemon={pokemon} />;
             })}
           </div>
