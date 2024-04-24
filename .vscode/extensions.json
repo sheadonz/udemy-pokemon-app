@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "dsznajder.es7-react-js-snippets",
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "github.copilot",
+        "pkief.material-icon-theme",
+        "esbenp.prettier-vscode"
+    ]
+}
