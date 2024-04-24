@@ -5,3 +5,5 @@ export const getALLPokemon = (url) => {
             .then(data => resolve(data))
     })
 }
+
+export const getPokemon = () => {};
