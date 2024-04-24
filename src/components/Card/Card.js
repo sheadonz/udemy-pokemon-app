@@ -13,7 +13,7 @@ const Card = ({pokemon}) => {
       <div className='cardTypes'>
         タイプ: {pokemon.types.map((type) => type.type.name).join(' / ')}
       </div>
-      <div className='cardInfo'>
+      <div className='cardInfo'></div>
         <div className='cardData'>
           <p className='title'>重さ:{pokemon.weight}</p>
         </div>
@@ -21,17 +21,20 @@ const Card = ({pokemon}) => {
           <p className='title'>高さ:{pokemon.height}</p>
         </div>
         <div className='cardData'>
-          {pokemon.abilities.map((ability) => {
-            return (
-              <div className='cardData'>
-                <p className='title'>{ability.is_hidden ? '夢特性: ' : '特性: '}{ability.ability.name}</p>
-              </div>
-            );
-          })}
+          <p className='title'>種族値</p>
+          <table>
+            <tbody>
+              {pokemon.stats.map((stat) => (
+                <tr key={stat.stat.name}>
+                  <td>{stat.stat.name}</td>
+                  <td>{stat.base_stat}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
-    </div>
-  );
+      );
     };
 
 export default Card;

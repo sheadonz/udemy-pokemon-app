@@ -37,7 +37,7 @@ function App() {
         <>
           <div className="pokemonCardContainer">
             {pokemonData.map((pokemon, i) => {
-              console.log(pokemon.abilities);
+              console.log(pokemon.stats);
               return <Card key={i} pokemon={pokemon} />;
             })}
           </div>
