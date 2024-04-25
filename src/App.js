@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { getALLPokemon, getPokemon } from './utils/pokemon.js';
 import Card from './components/Card/Card.js';
-
+import Navbar from './components/Card/Navbar/Navbar.js';
 function App() {
   const initialURL = "https://pokeapi.co/api/v2/pokemon";
   const [loading, setLoading] = useState(true);
@@ -30,20 +30,23 @@ function App() {
   }
   // console.log(pokemonData);
   return (
-    <div className="App">
-      {loading ? (
-        <h1>Loading...</h1>
-      ) : (
-        <>
-          <div className="pokemonCardContainer">
-            {pokemonData.map((pokemon, i) => {
-              console.log(pokemon.stats);
-              return <Card key={i} pokemon={pokemon} />;
-            })}
-          </div>
-        </>
-      )}
-    </div>
+    <>
+      <Navbar />
+      <div className="App">
+        {loading ? (
+          <h1>Loading...</h1>
+        ) : (
+          <>
+            <div className="pokemonCardContainer">
+              {pokemonData.map((pokemon, i) => {
+                console.log(pokemon.stats);
+                return <Card key={i} pokemon={pokemon} />;
+              })}
+            </div>
+          </>
+        )}
+      </div>
+    </>
   );
 }
 
