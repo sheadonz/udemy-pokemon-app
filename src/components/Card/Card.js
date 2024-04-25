@@ -5,8 +5,7 @@ const Card = ({pokemon}) => {
   return (
     <div className='card'>
       <div className='cardImg'>
-        <img src={pokemon.sprites.front_default} alt={pokemon.name}>
-        </img>
+        <img src={pokemon.sprites.front_default} alt={pokemon.name} />
       </div>
       <h3 className='cardName'>
         {pokemon.name}
@@ -15,36 +14,34 @@ const Card = ({pokemon}) => {
         タイプ: {pokemon.types.map((type) => type.type.name).join(' / ')}
       </div>
       <div className='cardInfo'></div>
-        <div className='cardData'>
-          <p className='title'>重さ:{pokemon.weight}</p>
-        </div>
-        <div className='cardData'>
-          <p className='title'>高さ:{pokemon.height}</p>
-        </div>
-        <div className='cardData'>
-          {pokemon.abilities.map((ability) => {
-            return (
-              <div className='cardData'>
-                <p className='title'>{ability.is_hidden ? '夢特性: ' : '特性: '}{ability.ability.name}</p>
-              </div>
-            );
-          })}
-        </div>
-        <div className='cardData'>
-          <p className='title'>種族値</p>
-          <table>
-            <tbody>
-              {pokemon.stats.map((stat) => (
-                <tr key={stat.stat.name}>
-                  <td>{stat.stat.name}</td>
-                  <td>{stat.base_stat}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+      <div className='cardData'>
+        <p className='title'>重さ:{pokemon.weight}</p>
       </div>
-      );
+      <div className='cardData'>
+        <p className='title'>高さ:{pokemon.height}</p>
+      </div>
+      <div className='cardData'>
+        {pokemon.abilities.map((ability, index) => (
+          <div className='cardData' key={index}>
+            <p className='title'>{ability.is_hidden ? '夢特性: ' : '特性: '}{ability.ability.name}</p>
+          </div>
+        ))}
+      </div>
+      <div className='cardData'>
+        <p className='title'>種族値</p>
+        <table>
+          <tbody>
+            {pokemon.stats.map((stat) => (
+              <tr key={stat.stat.name}>
+                <td>{stat.stat.name}</td>
+                <td>{stat.base_stat}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
     };
 
 export default Card;
