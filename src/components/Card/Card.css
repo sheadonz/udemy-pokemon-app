@@ -1,27 +1,17 @@
 .card {
-    background-color: #d1e6a1;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 16px;
+    width: 290px;
+    box-shadow: 2px 8px 21px chocolate;
+    border-radius: 10px;
+    background-color: antiquewhite;
 }
 
-.card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 8px;
+.cardName{
+    padding: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
-.card-description {
-    font-size: 14px;
-    color: #666666;
-}
-
-.card-button {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
+.cardInfo{
+    text-align: center;
 }
