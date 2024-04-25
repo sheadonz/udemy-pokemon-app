@@ -22,6 +22,15 @@ const Card = ({pokemon}) => {
           <p className='title'>高さ:{pokemon.height}</p>
         </div>
         <div className='cardData'>
+          {pokemon.abilities.map((ability) => {
+            return (
+              <div className='cardData'>
+                <p className='title'>{ability.is_hidden ? '夢特性: ' : '特性: '}{ability.ability.name}</p>
+              </div>
+            );
+          })}
+        </div>
+        <div className='cardData'>
           <p className='title'>種族値</p>
           <table>
             <tbody>
