@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/git@github.com:sheadonz/udemy-pokemon-app.git/static/css/main.cba2e23b.css",
+    "main.js": "/git@github.com:sheadonz/udemy-pokemon-app.git/static/js/main.dd8e2ba9.js",
+    "index.html": "/git@github.com:sheadonz/udemy-pokemon-app.git/index.html",
+    "main.cba2e23b.css.map": "/git@github.com:sheadonz/udemy-pokemon-app.git/static/css/main.cba2e23b.css.map",
+    "main.dd8e2ba9.js.map": "/git@github.com:sheadonz/udemy-pokemon-app.git/static/js/main.dd8e2ba9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cba2e23b.css",
+    "static/js/main.dd8e2ba9.js"
+  ]
+}
