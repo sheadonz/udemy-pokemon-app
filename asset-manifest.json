@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/udemy-pokemon-app/static/css/main.cba2e23b.css",
-    "main.js": "/udemy-pokemon-app/static/js/main.dd8e2ba9.js",
+    "main.css": "/udemy-pokemon-app/static/css/main.0a099c37.css",
+    "main.js": "/udemy-pokemon-app/static/js/main.a33efc59.js",
     "index.html": "/udemy-pokemon-app/index.html",
-    "main.cba2e23b.css.map": "/udemy-pokemon-app/static/css/main.cba2e23b.css.map",
-    "main.dd8e2ba9.js.map": "/udemy-pokemon-app/static/js/main.dd8e2ba9.js.map"
+    "main.0a099c37.css.map": "/udemy-pokemon-app/static/css/main.0a099c37.css.map",
+    "main.a33efc59.js.map": "/udemy-pokemon-app/static/js/main.a33efc59.js.map"
   },
   "entrypoints": [
-    "static/css/main.cba2e23b.css",
-    "static/js/main.dd8e2ba9.js"
+    "static/css/main.0a099c37.css",
+    "static/js/main.a33efc59.js"
   ]
 }
