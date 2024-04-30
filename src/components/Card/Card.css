@@ -1,5 +1,6 @@
 .card {
-    width: 290px;
+    width : 300px;
+    height: 500px;
     box-shadow: 2px 8px 21px -2px #777777;
     border-radius: 5px;
     background-color: antiquewhite;
@@ -15,3 +16,9 @@
 .cardInfo{
     text-align: center;
 }
+
+.cardTable {
+    margin: auto; /* 中央揃え */
+    width:max-content /* 必要に応じて調整 */
+  }
+  
